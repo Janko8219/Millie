@@ -14,7 +14,7 @@ let handler = async (m, { conn }) => {
 5. Don't call / vc to bot numbers
 6. EXP/Limit/Level cheats are prohibited
 7. If the bot doesn't respond, it means it's off/fixed a bug
-8. Please report any bugs via *.report*
+
 
 
  「 Consequences 」
@@ -22,8 +22,8 @@ let handler = async (m, { conn }) => {
 2. If you violate the rules number 1, 2, 3 then you can get banned from bots
 4. If you violate rule number 3 (insulting) then you will be picked up at your respective homes
 `.trim()
-    conn.fakeReply(m.chat, '*「 ⚠️ 」Loading...*', '0@s.whatsapp.net', '*RULES*')
-    await conn.send2ButtonLoc(m.chat, await (await fetch("https://github.com/neera-j/Bot-Files/blob/main/images/millie.jpg")).buffer(), haruno, '© ᴍɪʟʟɪᴇ', 'ᴍᴇɴᴜ', '.menu', 'ᴏᴡɴᴇʀ', '.owner', m)
+    conn.fakeReply(m.chat, '*「 ⚠️ 」𝙻𝚘𝚊𝚍𝚒𝚗𝚐...*', '0@s.whatsapp.net', '*RULES*')
+    await conn.send2ButtonLoc(m.chat, await (await fetch("https://github.com/neera-j/Bot-Files/blob/main/images/millie.jpg")).buffer(), haruno, '© ᴍᴅ-ʙᴏᴛ', 'ᴍᴇɴᴜ', '.menu', 'ᴏᴡɴᴇʀ', '.owner', m)
 }
 handler.tags = ['main']
 handler.help = ['rules']

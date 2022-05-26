@@ -6,7 +6,7 @@ let fetch = require('node-fetch')
 let moment = require('moment-timezone')
 const defaultMenu = {
     before: `╭────────────────╮
-          ✪  *ᴍɪʟʟɪᴇ* ✪           
+          💫  *ᴍᴅ-ʙᴏᴛ* 💫           
 ╰────────────────╯
        
   `.trimStart(),
@@ -14,7 +14,7 @@ const defaultMenu = {
   body: '├ %cmd',
   footer: '└────\n',
   after: `
-   ᴹᴵᴸᴸᴵᴱ
+   ᴍᴅ-ʙᴏᴛ
    ᴹᴼᴰᵁᴸᴬᴿ ᵂᴴᴬᵀᔆᴬᴾᴾ ᴮᴼᵀ
 `,
 }
@@ -164,103 +164,103 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
         "listMessage": {
           "title": `HI,
 ╭━━━━━━ᆫ ᴍᴇɴᴜ ᄀ━━━━━━
-┃ ⎆  Oi ${ucapan()}
-┃ ⎆  *NAME* : ${name}
-┃ ⎆  *BOT*   : ᴍɪʟʟɪᴇ
-┃ ⎆  *OWNER* :  ɴᴇᴇʀᴀᴊ
-┃ ⎆  *PREFIX* : ᴍᴜʟᴛɪ ᴘʀᴇғɪx 
-┃ ⎆  *WEEK* : ${week},
-┃ ⎆  *DATE* : ${date},
+┃ 🎈  Oi ${ucapan()}
+┃ 🎈  *𝙽𝙰𝙼𝙴* : ${name}
+┃ 🎈  *𝙱𝙾𝚃*   : ᴍᴅ-ʙᴏᴛ
+┃ 🎈  *𝙾𝚆𝙽𝙴𝚁* :  ᴍᴜɴᴀᴠɪʀ
+┃ 🎈  *𝙿𝚁𝙴𝙵𝙸𝚇* : ᴍᴜʟᴛɪ ᴘʀᴇғɪx 
+┃ 🎈  *𝚆𝙴𝙴𝙺* : ${week},
+┃ 🎈  *𝙳𝙰𝚃𝙴* : ${date},
 ╰━━━━━━━━━━━━━━━━━━━━━━━ \n`
           
            .trim(),
-           "description": "*DON'T SPAM*",
+           "description": "*𝙳𝚘𝚗'𝚝 𝚂𝚙𝚊𝚖*",
           "buttonText": "Click  Here",
           "listType": "SINGLE_SELECT",
           "sections": [
             {
               "rows": [
                 {
-                  "title": `ᴍɪʟʟɪᴇ`,
-                  "description": "sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ",
-                  "rowId": ".git"
+                  "title": `ᴍᴅ-ʙᴏᴛ`,
+                  "description": "ᴍᴜɴᴀᴠɪʀ",
+                  "rowId": ".? owner"
                 }, {
-                  "title": "𝗚𝗮𝗺𝗲𝘀",
+                  "title": "𝚐𝚊𝚖𝚎𝚜",
                   "description": "",
                   "rowId": ".? game"
 
                 }, {
-                  "title": "𝗫𝗣",
+                  "title": "𝚡𝚙",
                   "description": "",
                   "rowId": ".? xp"
 
                 },  {
-                  "title": "𝗩𝗶𝗱𝗲𝗼 𝗠𝗮𝗸𝗲𝗿",
+                  "title": "𝚅𝚒𝚍𝚎𝚘 𝙼𝚊𝚔𝚎𝚛",
                   "description": "",
                   "rowId": ".? videomaker"
 
                 },{
-                  "title": "𝗦𝘁𝗶𝗰𝗸𝗲𝗿",
+                  "title": "𝚜𝚝𝚒𝚌𝚔𝚎𝚛",
                   "description": "",
                   "rowId": ".? stiker"
                 }, { 
-                "title": "𝗔𝗻𝗶𝗺𝗲",
+                "title": "𝙰𝚗𝚒𝚖𝚎",
                 "description": "",
                 "rowId": ".? anime"
               },  {
-                  "title": "𝗤𝘂𝗼𝘁𝗲𝘀",
+                  "title": "𝚀𝚞𝚘𝚝𝚎𝚜",
                   "description": "",
                   "rowId": ".? quote"
                 }, {
-                  "title": "𝗔𝗱𝗺𝗶𝗻",
+                  "title": "𝙰𝚍𝚖𝚒𝚗",
                   "description": "",
                   "rowId": ".? admin"
                 }, {
-                  "title": "𝗚𝗿𝘂𝗽",
+                  "title": "𝙶𝚛𝚞𝚙",
                   "description": "",
                   "rowId": ".? grup"
                 }, {
-                  "title": "𝗣𝗿𝗲𝗺𝗶𝘂𝗺",
+                  "title": "𝙿𝚛𝚎𝚖𝚒𝚞𝚖",
                   "description": "",
                   "rowId": ".? premium"
                 }, {
-                  "title": "𝗜𝗻𝘁𝗲𝗿𝗻𝗲𝘁",
+                  "title": "𝙸𝚗𝚝𝚎𝚛𝚗𝚎𝚝",
                   "description": "",
                   "rowId": ".? internet"
                 }, {
-                  "title": "𝗔𝗻𝗼𝗻𝘆𝗺𝗼𝘂𝘀",
+                  "title": "𝙰𝚗𝚘𝚗𝚢𝚖𝚘𝚞𝚜",
                   "description": "",
                   "rowId": ".? anonymous"
                 }, {
-                  "title": "𝗠𝗮𝗴𝗶𝗰 𝗦𝗵𝗲𝗹𝗹",
+                  "title": "𝙼𝚊𝚐𝚒𝚌 𝚂𝚎𝚕𝚕",
                   "description": "",
                   "rowId": ".? magicshell"
                 }, {
-                  "title": "𝗡𝘂𝗹𝗶𝘀 & 𝗟𝗼𝗴𝗼",
+                  "title": "𝙽𝚞𝚕𝚒𝚜 & 𝙻𝚘𝚐𝚘",
                   "description": "",
                   "rowId": ".? nulis"
                 }, {
-                  "title": "𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱𝗲𝗿",
+                  "title": "𝙳𝚘𝚠𝚗𝚕𝚘𝚊𝚍𝚎𝚛",
                   "description": "",
                   "rowId": ".? downloader"
                 }, {
-                  "title": "𝗧𝗼𝗼𝗹𝘀",
+                  "title": "𝚃𝚘𝚘𝚕𝚜",
                   "description": "",
                   "rowId": ".? tools"
                 }, {
-                  "title": "𝗩𝗼𝗶𝗰𝗲 𝗖𝗵𝗮𝗻𝗴𝗲𝗿",
+                  "title": "𝚅𝚘𝚒𝚌𝚎 𝚌𝚑𝚊𝚗𝚐𝚎𝚛",
                   "description": "",
                   "rowId": `.? audio`
                 }, {
-                  "title": "𝗙𝘂𝗻",
+                  "title": "𝙵𝚞𝚗",
                   "description": "",
                   "rowId": ".? fun"
                 }, {
-                  "title": "𝗗𝗮𝘁𝗮𝗯𝗮𝘀𝗲",
+                  "title": "𝙳𝚊𝚝𝚊𝚋𝚊𝚜𝚎",
                   "description": "",
                   "rowId": ".? database"
                 },{
-                  "title": "Owner",
+                  "title": "𝙾𝚠𝚗𝚎𝚛",
                   "description": "",
                   "rowId": ".? owner"
                 }
