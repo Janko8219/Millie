@@ -391,7 +391,7 @@ module.exports = {
             let groupMetadata = await this.groupMetadata(jid)
             for (let user of participants) {
               // let pp = './src/avatar_contact.png'
-              let pp = 'https://telegra.ph/file/fd4230902e75d397d8667.jpg'
+              let pp = 'https://telegra.ph/file/dc6958b7382ea524ba32d.jpg'
               try {
                 pp = await uploadImage(await (await fetch(await this.getProfilePicture(user))).buffer())
               } catch (e) {
@@ -399,7 +399,7 @@ module.exports = {
                 text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'welcome, @user!').replace('@subject', this.getName(jid)).replace('@desc', groupMetadata.desc) :
                   (chat.sBye || this.bye || conn.bye || 'See you later, @user!')).replace(/@user/g, '@' + user.split`@`[0])
                 let wel = `https://hardianto-chan.herokuapp.com/api/welcome4?profile=${pp}&name=${encodeURIComponent(this.getName(user))}`
-                let lea = `https://hardianto-chan.herokuapp.com/api/goodbye3?profile=${pp}&name=${encodeURIComponent(this.getName(user))}&bg=https://telegra.ph/file/c996b407dbb9af2308487.jpg&namegb=${encodeURIComponent(this.getName(jid))}&member=${encodeURIComponent(groupMetadata.participants.length)}`
+                let lea = `https://hardianto-chan.herokuapp.com/api/goodbye3?profile=${pp}&name=${encodeURIComponent(this.getName(user))}&bg=https://telegra.ph/file/dc6958b7382ea524ba32d.jpg&namegb=${encodeURIComponent(this.getName(jid))}&member=${encodeURIComponent(groupMetadata.participants.length)}`
                 this.sendFile(jid, action === 'add' ? wel : lea, 'pp.jpg', text, null, false, {
                   thumbnail: await (await fetch(action === 'add' ? wel : lea)).buffer(),
                   contextInfo: {
